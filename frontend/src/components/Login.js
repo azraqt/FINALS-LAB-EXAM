@@ -15,13 +15,13 @@ const Login = () => {
             // Redirect based on user role
             if (user.role === 'admin') {
                 navigate('/admin');
-            } else  if(user.role === 'patient'){
+            } else if (user.role === 'patient') {
                 navigate('/patient-home');
-            } else  if(user.role === 'doctor'){
+            } else if (user.role === 'doctor') {
                 navigate('/doctor-appointment');
-            } else  if(user.role === 'receptionist'){
+            } else if (user.role === 'receptionist') {
                 navigate('/receptionist');
-            }else  if(user.role === 'user'){
+            } else if (user.role === 'user') {
                 navigate('/user');
             }
         }
@@ -41,13 +41,13 @@ const Login = () => {
             // Redirect based on user role
             if (user.role === 'admin') {
                 navigate('/admin');
-            } else  if(user.role === 'patient'){
+            } else if (user.role === 'patient') {
                 navigate('/patient-home');
-            } else  if(user.role === 'doctor'){
+            } else if (user.role === 'doctor') {
                 navigate('/doctor-appointment');
-            } else  if(user.role === 'receptionist'){
+            } else if (user.role === 'receptionist') {
                 navigate('/receptionist');
-            }else  if(user.role === 'user'){
+            } else if (user.role === 'user') {
                 navigate('/user');
             }
         } catch (error) {
