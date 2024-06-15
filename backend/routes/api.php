@@ -47,6 +47,9 @@ Route::delete('/users/{id}', [UserController::class, 'delete']);
 Route::get('/users/{id}', [UserController::class, 'show']);
 Route::put('/users/{id}', [UserController::class, 'update']);
 
+Route::post('medical_records', [MedicalRecordController::class, 'store']);
+Route::get('medical_records/{patient_id}', [MedicalRecordController::class, 'index']);
+Route::get('doctor-medical_records/{patient_id}', [MedicalRecordController::class, 'doctorView']);
 
 Route::middleware('auth:sanctum', 'verified')->get('/user', function (Request $request) {
     return $request->user();
